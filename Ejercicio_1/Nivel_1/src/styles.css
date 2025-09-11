@@ -120,5 +120,62 @@ h1{
 }
 
 
+/*Adaptabilidad*/
+@media (max-width:600px){
+    .padre{
+        flex-direction: column;
+    }
+
+    p{
+        padding: 10px;
+        margin: 20px;
+        width: auto;
+    }
+
+    .medio{
+        width: auto;
+    }
+
+    .div56 {
+        display: block;        
+        gap: 0px;              
+    }
+
+    .div5{
+        width: auto;
+        
+    }
+    
+    .article{
+        width: 30%;
+        flex: 0 0 35%;
+    }
+
+    .padre2{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .div6{
+        margin: 0px;
+        padding-bottom: 10px;
+        width: auto; 
+        display: block;
+    }
+
+    .publicidad{
+        width: auto;
+        top: 20px;
+        position: relative;
+    }
+
+    .publicidad2{
+        margin-bottom: 30px;
+    }
+
+}
+
+
 
 
