@@ -9,4 +9,6 @@ Nivel_1/
 # On this firts exercise, i made a basic layout with HTML as and structure of a web
 # and gave styles to the page with CSS
 
-# On this second exercise, i applied responvibe styles for a 600px screen, using CSS
+# On this second exercise, i applied responsive styles for a 900px screen, using CSS
+
+# On this third exercise, i applied responsive styles for a 600px screen, using CSS

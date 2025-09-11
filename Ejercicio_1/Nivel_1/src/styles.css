@@ -81,7 +81,8 @@ h1{
 
 .publicidad{
     background: yellow;
-    width: 30%;
+    width: 35%;
+    padding: 20px;
     
 }
 
@@ -121,7 +122,7 @@ h1{
 
 
 /*Adaptabilidad*/
-@media (max-width:600px){
+@media (max-width:900px){
     .padre{
         flex-direction: column;
     }
@@ -174,6 +175,15 @@ h1{
         margin-bottom: 30px;
     }
 
+}
+
+
+/*Adaptabilidad Mobil*/
+@media(max-width:600px) {
+    .article{
+        width:30%;
+        flex: 1 1 100%;
+    }
 }
 
 
