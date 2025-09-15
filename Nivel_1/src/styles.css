@@ -1,4 +1,4 @@
-/*Esta es la seccion del nav y el header*/
+
 p{
     background-color: salmon;
     padding: 10px;
@@ -42,7 +42,14 @@ h1{
 }
 
 
-/*Esta es la seccion de las secction*/
+
+
+
+
+
+
+
+
 .div4{
     background: black;
     padding: 20px;
@@ -95,8 +102,6 @@ h1{
     margin: 20px;
     margin-bottom: 5px;
     width: 60%;
-    /*padding: 10px;*/
-    
 }
 
 .publicidad2{
@@ -115,7 +120,14 @@ h1{
 }
 
 
-/*Esta es la seccion del footer*/
+
+
+
+
+
+
+
+
 .pie{
     background-color: rgb(202, 202, 127);
     padding: 10px;
@@ -125,7 +137,14 @@ h1{
 }
 
 
-/*Esta parte es para el Fondo*/
+
+
+
+
+
+
+
+
 .fondo{
     background-color: antiquewhite;
     max-width: 1200px;
@@ -133,7 +152,14 @@ h1{
 }
 
 
-/*Adaptabilidad*/
+
+
+
+
+
+
+
+
 @media (max-width:900px){
     .padre{
         flex-direction: column;
@@ -195,7 +221,14 @@ h1{
 }
 
 
-/*Adaptabilidad Mobil*/
+
+
+
+
+
+
+
+
 @media(max-width:656px) {
     .article{
         margin-right: 20px;
@@ -207,7 +240,3 @@ h1{
         margin-right: 20px;
     }
 }
-
-
-
-
