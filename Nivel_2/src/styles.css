@@ -105,6 +105,7 @@ header{
 .div1{
     background-image: url(../../img/header.jpg);
     background-size: 175%;
+    background-repeat: no-repeat;
     background-position: 50%;
     height: 450px;
 }
@@ -160,7 +161,6 @@ header{
     background-image: url(../../img/sakura.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     height: 225px;
     margin-top: 3px;
     display: flex;
@@ -241,9 +241,6 @@ header{
 
 
 @media (max-width:900px) {
-    .div1{
-        background-attachment: scroll;
-    }
     nav{
         padding-top: 10px;
         flex-direction: column;
@@ -267,7 +264,7 @@ header{
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        height: 276px;
+        height: 50px;
     }
 
     .div-content{
@@ -294,7 +291,7 @@ header{
 
 
 
-@media(max-width:600px){
+@media(max-width:610px){
     section{
         flex-direction: column;
     }
