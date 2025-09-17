@@ -1,7 +1,7 @@
 <?php
-$names = [];
-array_push($names, "Aleajndro", "Marc", "Maria", "Sonia", "Ignacio");
-foreach ($names as $name) {
-    echo $name, "\n";
+$nums = [];
+array_push($nums, 1, 2, 3, 4, 5);
+foreach ($nums as $num) {
+    echo $num, "\n";
 }
 ?>
