@@ -2,7 +2,7 @@
 $nota = 4.4;
 $nota_max = 10;
 
-function division($nota, $nota_max){
+function dividir($nota, $nota_max){
 
     $porcentaje = round(($nota / $nota_max) * 100);
 
@@ -19,5 +19,5 @@ function division($nota, $nota_max){
     }
 }
 
-echo division($nota, $nota_max);
+echo dividir($nota, $nota_max);
 ?>

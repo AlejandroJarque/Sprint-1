@@ -26,26 +26,32 @@ echo $X % $Y % $N % $M,"\n";
 
 
 $my_operacion = "+";
-function operacion($X, $Y, $my_operacion){
-    if($my_operacion == "+"){
-        return $X + $Y;
-    }else if($my_operacion == "-"){
-        return $X - $Y;
-    }else if($my_operacion == "*"){
-        return $X * $Y;
-    }else if($my_operacion == "/"){
-        if($Y == 0){
+function operar($X, $Y, $my_operacion){
+
+    switch($my_operacion) {
+        case "+":
+            return $X + $Y;
+            break;
+        case "-":
+             return $X - $Y;
+             break;
+        case "*":
+            return $X * $Y;
+            break;
+        case "/":
+             if($Y == 0){
             return "No se puede dividir entre 0";
-        }
-        return $X / $Y;
-    }else {
-        return "Operacion no permitida";
+            }
+            return $X / $Y;
+            break;
+        default:
+            return "valores incorrectos";
     }
 }
 
-echo operacion($X,$Y, "+"). "\n";
-echo operacion($X,$Y, "-"). "\n";
-echo operacion($X,$Y, "*"). "\n";
-echo operacion($X,$Y, "/"). "\n";
+echo operar($X,$Y, "+"). "\n";
+echo operar($X,$Y, "-"). "\n";
+echo operar($X,$Y, "*"). "\n";
+echo operar($X,$Y, "/"). "\n";
 
 ?>

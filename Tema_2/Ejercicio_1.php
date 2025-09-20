@@ -6,6 +6,6 @@ $my_Boolean = true;
 
 echo $my_String,"\n", $my_Integer,"\n", $my_Double, "\n", var_export($my_Boolean, true),"\n";
 
-const NAME = "alejandro jarque";
-echo ucwords(NAME);
+define("NAME", "Alejandro Jarque");
+echo ucwords("NAME");
 ?>
