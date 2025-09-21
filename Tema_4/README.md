@@ -1,0 +1,3 @@
+## In the first exercise, I created an employee class, with a constructor method, and a function that indicates whether he has to pay taxes or not depending on his salary, and finally I declared an object and printed it.
+
+## In the second exercise, I created a Shape class, and two more classes, Triangle and Rectangle, which inherit attributes from this one directly, and I added a function so they can calculate their area.

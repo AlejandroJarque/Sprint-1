@@ -1,0 +1,3 @@
+## In the first exercise I created an animal class with an abstract method, and two more classes, dog and cat, that inherit from it, to represent the sound of animals that is different for each species.
+
+## In the second exercise I have repeated the exercise of the Triangle and the Rectangle of the previous topic, but in this case I have added to the parent class, an abstract function, which its child classes will inherit.
