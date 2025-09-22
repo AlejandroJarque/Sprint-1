@@ -22,5 +22,16 @@ $_SESSION['age'] = $age;
     <p>Usuario: <?php echo $_SESSION['username']; ?></p>
     <p>Edad: <?php echo $_SESSION['age']; ?></p>
 
+     <form action="Formulario.html" method="POST">
+        <button type="submit" name="volver">Volver</button>
+    </form>
+
+    <?php
+        if(isset($_POST['volver'])) {
+            header("Location: Formulario.html");
+            exit;
+        }
+    ?>
+
 </body>
 </html>
