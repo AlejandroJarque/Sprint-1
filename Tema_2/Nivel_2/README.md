@@ -1,0 +1,3 @@
+## In the first exercise I created a simple program to calculate the cost of a call, with a series of parameters that were requested, through a function, which contains a conditional and a nested for loop.
+
+## In the second exercise I have made 3 functions to calculate, the sum, the average, and the category of a final score, which receives 3 separate scores, for this I have used the parameter of each previous function to save code
