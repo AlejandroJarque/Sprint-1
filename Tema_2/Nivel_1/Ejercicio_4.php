@@ -1,8 +1,8 @@
 <?php
-$my_num;
-$my_count;
+/*$my_num;*/
+/*$my_count;*/
 
-function to_count($my_num, $my_count){
+function to_count($my_num = 10, $my_count){
     if($my_num == 0){
         $my_num = 10;
     }
