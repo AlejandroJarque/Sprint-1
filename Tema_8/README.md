@@ -1,0 +1,3 @@
+## In the first exercise I used a program provided by the school to perform a unit test. To do this I downloaded Composer and the PHPUnit library, and I entered the appropriate commands to test the exercise.
+
+## In the second exercise I created a TooFast class that detects the driver's speed by parameters, to test it, I used the TDD technique to check the functionality of each case, using commands, and Composer and PHPUnit

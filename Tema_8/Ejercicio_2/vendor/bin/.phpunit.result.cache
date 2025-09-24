@@ -1,0 +1,1 @@
+{"version":2,"defects":{"SpeedCheckerTest::testTooFast":7,"SpeedCheckerTest::testFast":7,"SpeedCheckerTest::testVeryFast":7},"times":{"SpeedCheckerTest::testTooFast":0,"SpeedCheckerTest::testTooSlow":0.004,"SpeedCheckerTest::testSlow":0,"SpeedCheckerTest::testFast":0,"SpeedCheckerTest::testVeryFast":0}}
