@@ -437,6 +437,10 @@ header{
         margin-left: 45px;
         width: 85%;
     }
+
+    .nav-text{
+        display: none;
+    }
 }
 
 

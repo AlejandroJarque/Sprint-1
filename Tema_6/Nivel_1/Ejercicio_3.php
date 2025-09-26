@@ -21,11 +21,11 @@ class Familia extends Animal1 {
     }
 
     public function __toString() {
-        return "Este animal es un ". $this -> tipo. ", y es de la familia de los ". $this -> familia;
+        return "Este animal es un tipo de ". $this -> tipo. ", y es de la familia de las ". $this -> familia;
     }
     
 }
 
-$miAnimal = new Familia("pajaro", "patos");
+$miAnimal = new Familia("ave", "rapaces");
 echo $miAnimal;
 ?>
