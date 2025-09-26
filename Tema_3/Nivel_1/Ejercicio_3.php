@@ -2,7 +2,7 @@
 $palabras = ["manual", "mar", "maleta", "muestra"];
 $letra = 'm';
 
-function validacion($palabras, $letra) {
+function validar($palabras, $letra) {
     foreach($palabras as $palabra) {
 
         $palabraConLetra = false;
@@ -22,5 +22,5 @@ function validacion($palabras, $letra) {
     return true;
 }
 
-echo var_dump(validacion($palabras, $letra));
+echo var_dump(validar($palabras, $letra));
 ?>

@@ -1,0 +1,1 @@
+## In this exercise I have used the Shape2 class from the previous level again, and I have refactored it to be able to calculate the area of ​​a circle, using properties of this same class.

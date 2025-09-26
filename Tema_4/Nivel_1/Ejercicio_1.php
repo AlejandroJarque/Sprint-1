@@ -9,16 +9,16 @@ class Empleado {
         $this -> sueldo = $sueldo;
     }
 
-    public function Impuestos() {
-        if($this -> sueldo >= 6000) {
+    public function pagarImpuestos() {
+        if($this -> sueldo > 6000) {
             return "El empleado ". $this -> name. ", ha de pagar impuestos";
         }else{
-            return "El empleado ". $this -> name. ",  no ha de pagar impuestos";
+            return "El empleado ". $this -> name. ", no ha de pagar impuestos";
         }
     }
 }
 
 $miEmpleado = new Empleado("Ismael", 6000);
-echo $miEmpleado -> Impuestos();
+echo $miEmpleado -> pagarImpuestos();
 
 ?>

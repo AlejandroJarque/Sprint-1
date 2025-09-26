@@ -243,7 +243,10 @@ header{
 @media (max-width:900px) {
     nav{
         padding-top: 10px;
+       /* padding-right: 100px;*/
+        margin-right: -40px;
         flex-direction: column;
+        position: absolute;
     }
 
     .div-logo{
@@ -258,6 +261,7 @@ header{
 
     a{
         padding-top: 10px;
+        margin-right: -20px;
     }
 
     .div-content{
@@ -275,6 +279,32 @@ header{
         margin-top: auto;
     }
 
+    .div1{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header {
+        margin-bottom: 200px;
+        margin-top: -80px;
+        margin-left: 190px;
+        margin-right: 150px;
+        /*padding-right: 20px;
+        padding-left: 10px;*/
+        
+    }
+
+    .div-header {
+        /*padding-bottom: 20px;
+        padding-right: 40px;*/
+        background-color:  transparent;
+        width: 500px;
+    }
+
+    h1{
+       /* padding-left: 30px;*/
+        font-size: 25px;
+    }
 }
 
 
@@ -285,13 +315,127 @@ header{
 
 
 
+
+@media(max-width:870px){
+
+    header{
+        margin-left: 180px;
+    }
+}
+
+@media(max-width:840px) {
+    header{
+        margin-left: 170px
+    }
+}
+
+@media(max-width:810px) {
+    header{
+        margin-left: 160px;
+    }
+}
+
+@media(max-width:795px){
+    header{
+        margin-left: 150px;
+    }
+}
+
+@media(max-width:775px) {
+    header{
+        margin-left: 140px;
+    }
+}
+
+@media(max-width:745px) {
+    header{
+        margin-left: 130px;
+    }
+}
+
+@media(max-width:730px){
+    header{
+        margin-left: 120px;
+    }
+
+    div.header{
+        width:300%;
+    }
+
+}
+
+@media(max-width: 720px) {
+    header{
+        margin-left: 110px;
+    }
+    h1{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 700px) {
+    header {
+        margin-left: 100px;
+    }
+}
+
+@media(max-width: 680px) {
+    header {
+        margin-left: 90px;
+    }
+}
+
+@media(max-width: 665px) {
+    header {
+        margin-left: 80px;
+    }
+    h1{
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 650px) {
+    header {
+        margin-left: 75px;
+    }
+}
+
+@media(max-width: 635px) {
+    header {
+        margin-left: 65px;
+    }
+}
+
+@media(max-width:620px) {
+    header{
+        margin-left: 60px;
+    }
+}
+
 @media(max-width:610px){
+      header{
+        margin-left: 55px;
+    }
+
     section{
         flex-direction: column;
     }
 
     .div-section{
         width:auto;
+    }
+}
+
+@media(max-width: 600px) {
+    header{
+        margin-left: 50px;
+    }
+}
+
+@media(max-width: 580px) {
+    header{
+        margin-left: 45px;
+        width: 85%;
     }
 }
 

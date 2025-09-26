@@ -1,8 +1,5 @@
 <?php
-
-abstract class Shape2 {
-    abstract public function Calculo();
-}
+require_once __DIR__. '../../Nivel_1/Ejercicio_2/ClassShape2.php';
 
 class Circulo extends Shape2 {
     public $pi;
@@ -13,12 +10,12 @@ class Circulo extends Shape2 {
         $this -> r = $r;
     }
 
-    public function Calculo(){
+    public function calcular(){
         $AreaCirculo = $this -> pi * ($this -> r ** 2);
         return$AreaCirculo;
     }
 }
 
 $miCirculo = new Circulo(3.14, 5);
-echo "El area de mi circulo es: ". $miCirculo -> Calculo();
+echo "El area de mi circulo es: ". $miCirculo -> calcular();
 ?>
