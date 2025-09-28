@@ -2,7 +2,7 @@
 $palabras = ["manual", "mar", "maleta", "muestra"];
 $letra = 'm';
 
-function validar($palabras, $letra) {
+/*function validar($palabras, $letra) {
     foreach($palabras as $palabra) {
 
         $palabraConLetra = false;
@@ -20,7 +20,28 @@ function validar($palabras, $letra) {
     }
 
     return true;
+}*/
+
+function recorrerArray($palabras) {
+    
+    foreach($palabras as $palabra) {
+        yield $palabra;
+    }
 }
 
-echo var_dump(validar($palabras, $letra));
+
+function validarLetra($palabras, $letra) {
+
+     foreach(recorrerArray($palabras) as $palabra) {
+
+        if(strpos($palabra, $letra) === false) {
+            return false;
+            break;
+        }
+    }
+   
+    return true;
+}
+
+echo var_dump(validarLetra($palabras, $letra));
 ?>
