@@ -16,9 +16,9 @@ function CalcularMedia($suma) {
 function Clasificar($media) {
     if($media < 4000) {
         echo "Categoria: Principiante";
-    }else if($media >= 4000 && $media < 8000){
+    }else if($media < 8000){
         echo "Categoria: Intermedio";
-    }else if($media >= 8000 && $media <= 9999) {
+    }else if($media <= 9999) {
         echo "Categoria: Profesional";
     }else {
         echo "Puntuacion final fuera de rango, revisa las calificaciones";
