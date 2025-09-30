@@ -7,33 +7,11 @@ $alumnos = array (
     "Bernat" => array("notas" => [6,6,6,6,6]),
 );
 
-/*function MediaAlumno($alumnos) {
-    $sumaTotal = 0;
-    foreach($alumnos as $alumno => $notas) {
-
-        $sumaNotas = 0;
-        $cantidadNotas = count($notas["notas"]);
-
-        foreach($notas["notas"] as $nota) {
-            $sumaNotas += $nota;
-        }
-
-        $mediaAlumno = $sumaNotas / $cantidadNotas;
-        echo "Media ". $alumno.": ". $mediaAlumno."\n";
-
-        $sumaTotal += $mediaAlumno;
-    }
-    $mediaTotal = $sumaTotal / count($alumnos);
-    return $mediaTotal;
-}
-
-echo "La media total de la clase es: ". MediaAlumno($alumnos);*/
-
 
 function recorrerNotas($notas) {
 
     foreach($notas["notas"] as $nota) {
-        yield $nota;
+        return $notas["notas"];
     }
 
 }
