@@ -2,25 +2,22 @@
 $palabras = ["manual", "mar", "maleta", "muestra"];
 $letra = 'm';
 
-function recorrerArray($palabras) {
-    
+
+function validarLetra(array $palabras, string $letra) {
+
     foreach($palabras as $palabra) {
-        return $palabras;
-    }
-}
 
+        $letraEncontrada = strpos($palabra, $letra);
 
-function validarLetra($palabras, $letra) {
-
-     foreach(recorrerArray($palabras) as $palabra) {
-
-        if(strpos($palabra, $letra) === false) {
+        if($letraEncontrada === false) {
             return false;
             break;
         }
     }
-   
+
+    
     return true;
+
 }
 
 echo var_dump(validarLetra($palabras, $letra));
