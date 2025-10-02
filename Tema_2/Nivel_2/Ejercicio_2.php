@@ -1,11 +1,9 @@
 <?php
-$p1;
-$p2;
-$p3;
 
-function Sumar($p1, $p2, $p3) {
-    $suma = $p1 + $p2 + $p3;
-    return $suma;
+$suma = [9999, 9999, 9999];
+
+function Sumar($suma) {
+    return array_sum($suma);
 }
 
 function CalcularMedia($suma) {
@@ -25,7 +23,7 @@ function Clasificar($media) {
     }
 }
 
-$sumaP = Sumar(9999, 9999, 9999);
+$sumaP = Sumar($suma);
 echo "La suma de las 3 puntuaciones es: ". $sumaP."\n";
 
 $mediaP = CalcularMedia($sumaP);

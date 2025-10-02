@@ -1,23 +1,24 @@
 <?php
-$tiempoLlamada = 5;
-$costeLlamada = 0.10;
 
+$tiempoLlamada;
 
-function Llamar($tiempoLlamada, $costeLlamada) {
+function llamar($tiempoLlamada) {
 
-    $incrementoLlamada = 0;
-    $incrementoLlamada += $costeLlamada;
+ 
+    if ($tiempoLlamada > 3) {
+        
+        $tiempoLlamada -= 3;
+        $costeFinal = ($tiempoLlamada * 0.05) + 0.10;
+        return sprintf("%.2f",$costeFinal);
 
-    if($tiempoLlamada > 3) {
-         for($i = 3; $i < $tiempoLlamada; $i++) {
-            $incrementoLlamada += 0.05;
+    }else {
 
-        }
+        return sprintf("%.2f",0.10);
     }
-    
-    return $incrementoLlamada;
+
 }
 
-$costeFinal = Llamar($tiempoLlamada, $costeLlamada);
-echo "Su Tiempo de llamada es de ".$tiempoLlamada. " min, y su coste de ".sprintf("%.2f",$costeFinal)."€";
+$miLlamada = llamar(5);
+echo "El coste de su llamada es de ". $miLlamada. "€";
+
 ?>
