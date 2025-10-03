@@ -1,53 +1,33 @@
 <?php
-$alumnos = array (
-    "Alejandro" => array("notas" => [6,6,6,6,6]),
-    "Jose" => array("notas" => [6,6,6,6,6]),
-    "Miguel" => array("notas" => [6,6,6,6,6]),
-    "Ignacio" => array("notas" => [6,6,6,6,6]),
-    "Bernat" => array("notas" => [6,6,6,6,6]),
-);
 
+$alumnos = [
+    "Alejandro" => [5,5,5,5,5],
+    "Jose" => [6,6,6,6,6,],
+    "Miguel" => [7,7,7,7,7],
+    "Ignacio" => [9,9,9,9,9],
+    "Bernat" => [4,4,4,4,4]
+];
 
-function recorrerNotas($notas) {
+function calcularMedia($alumnos){
 
-    foreach($notas["notas"] as $nota) {
-        return $notas["notas"];
-    }
-
-}
-
-function mediaAlumno($notas){
-
-    $numNotas = count($notas["notas"]);
-    $sumaNotas = 0;
-
-    foreach(recorrerNotas($notas) as $nota) {
-        $sumaNotas += $nota;
-    }
-
-    $mediaAlumno = $sumaNotas / $numNotas;
-
-    return $mediaAlumno;
-}
-
-function mediaClase($alumnos) {
+    $totalNotas = array_sum($alumnos);
     
-    $numAlumnos = count($alumnos);
-    $sumaNotasAlumnos = 0;
+    $media = $totalNotas / 5;
 
-    foreach($alumnos as $alumno) {
-        $sumaNotasAlumnos += mediaAlumno($alumno);
-    }
-   
-    $mediaClase = $sumaNotasAlumnos / $numAlumnos;
-    return $mediaClase;
+    return $media;
 }
 
-echo "La media de Alejandro es: ". mediaAlumno($alumnos["Alejandro"])."\n";
-echo "La media de Jose es: ". mediaAlumno($alumnos["Jose"])."\n";
-echo "La media de Miguel es: ". mediaAlumno($alumnos["Miguel"])."\n";
-echo "La media de Ignacio es: ". mediaAlumno($alumnos["Ignacio"])."\n";
-echo "La media de Bernat es: ". mediaAlumno($alumnos["Bernat"])."\n"."\n";
-echo "La media de la Clase es: ". mediaClase($alumnos)
+echo "La media de Alejandro es: ". calcularMedia($alumnos["Alejandro"])."\n";
+echo "La media de Jose es: ". calcularMedia($alumnos["Jose"])."\n";
+echo "La media de Miguel es: ". calcularMedia($alumnos["Miguel"])."\n";
+echo "La media de Ignacio es: ". calcularMedia($alumnos["Ignacio"])."\n";
+echo "La media de Bernat es: ". calcularMedia($alumnos["Bernat"])."\n";
+
+$mediasAlumnos = [];
+
+array_push($mediasAlumnos, calcularMedia($alumnos["Alejandro"]),calcularMedia($alumnos["Jose"]),calcularMedia($alumnos["Miguel"]),
+calcularMedia($alumnos["Ignacio"]),calcularMedia($alumnos["Bernat"]));
+
+echo "La media de la Clase es: ". calcularMedia($mediasAlumnos);
 
 ?>

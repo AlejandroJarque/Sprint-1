@@ -2,16 +2,10 @@
 $miLista1 = ["Arnau", "Alejandro", "Marc", "Jonathan", "Antonela", "Fran"];
 $miLista2 = ["Arnau", "Ignacio", "Carlos", "Jose", "Pau", "Fran"];
 
-function Listar_1($miLista1) {
+function Listar($miLista1) {
     foreach($miLista1 as $nom1) {
         echo $nom1. " ";
     } 
-}
-
-function Listar_2($miLista2) {
-    foreach($miLista2 as $nom2) {
-        echo  $nom2. " ";
-    }
 }
 
 function EnComun($miLista1,$miLista2) {
@@ -34,10 +28,10 @@ Function Unir($miLista1, $miLista2) {
 
 
 echo "Lista 1: ";
-Listar_1($miLista1);
+Listar($miLista1);
 
 echo "\n"."Lista 2: ";
-Listar_2($miLista2);
+Listar($miLista2);
 
 echo "\n". "Lista de invitados en comun: ";
 EnComun($miLista1,$miLista2);

@@ -1,6 +1,6 @@
 <?php
 $palabras = ["manual", "mar", "maleta", "muestra"];
-$letra = 'm';
+$letra = 'a';
 
 
 function validarLetra(array $palabras, string $letra) {
@@ -11,7 +11,6 @@ function validarLetra(array $palabras, string $letra) {
 
         if($letraEncontrada === false) {
             return false;
-            break;
         }
     }
 
